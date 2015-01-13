@@ -225,7 +225,7 @@
         if ( ctrl.activeIndex === -1 && ctrl.taggingLabel !== false ) {
           ctrl.activeIndex = 0;
         }
-
+	$scope.$emit('ui.select.activate');
         // Give it time to appear before focus
         $timeout(function() {
           ctrl.search = initSearchValue || ctrl.search;
